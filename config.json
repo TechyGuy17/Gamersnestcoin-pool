@@ -1,8 +1,8 @@
 {
-  "coin": "kryptokrona",
-  "symbol": "XKR",
-  "coinUnits": 10000,
-  "coinDifficultyTarget": 90,
+  "coin": "Gamersnestcoin",
+  "symbol": "GNC",
+  "coinUnits": 100000,
+  "coinDifficultyTarget": 60,
   "logging": {
     "files": {
       "level": "info",
@@ -17,7 +17,7 @@
   "poolServer": {
     "enabled": true,
     "clusterForks": "auto",
-    "poolAddress": "SEKReTyRMJx2LTUrbf2r7GdMJ9PY5yHbYN6MCZkKUVvKZSwwwf3HnUS6Jia3TkD4jWgfxeh1AEYV3DKEAesSb7mSAvNqfCNBXrg",
+    "poolAddress": "<your GNC adress>",
     "blockRefreshInterval": 1000,
     "minerTimeout": 3600,
     "ports": [
