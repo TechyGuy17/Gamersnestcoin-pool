@@ -1,8 +1,8 @@
-var api = 'https://gota.kryptokrona.se/api' // Change this to your pools api, if ssl is not used its likely to be 'http://yourpooldomain.se:8117' 
+var api = 'http://5.9.250.90:8117' // Change this to your pools api, if ssl is not used its likely to be 'http://yourpooldomain.se:8117' 
 
-var api_blockexplorer = 'https://explorer.kryptokrona.se/api' // Leave this unchanged
+var api_blockexplorer = 'https://explorer.gamersnest.org/api' // Leave this unchanged
 
-var poolHost = 'poolhost.com' // Change this to your pools site
+var poolHost = '5.9.250.90' // Change this to your pools site
 
 var irc = 'irc.freenode.net/#poolhost' // Change this to your pools IRC channel
 
@@ -20,9 +20,8 @@ var transactionExplorer = 'https://explorer.kryptokrona.se/?hash={id}#blockchain
 
 var networkStat = {
   'xkr': [
-    ['pool.kryptokrona.se', 'http://pool.kryptokrona.se:8117'],
-    ['pool2.kryptokrona.se', 'http://pool2.kryptokrona.se:8117'],
-    ['pool3.kryptokrona.se', 'http://pool3.kryptokrona.se:8117']
+    ['Gamersnest', 'http://5.9.250.90:8117'],
+    
     //Add your pool here to get network stats, put a comma on the ending of 
     //the line above and uncomment the line below and fill in your credentials.
     //['pooldomain', 'pool-url']
