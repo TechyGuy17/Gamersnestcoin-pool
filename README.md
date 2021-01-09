@@ -1,7 +1,7 @@
-![image](https://i.imgur.com/0NjeEHU.png)
 
 
-kryptokrona-pool (for NodeJS 10)
+
+Gamersnestcoin-pool (for NodeJS 10)
 ====================
 Formerly known as turtle-pool, which in turn was known as cryptonote-forknote-pool, forked from Forknote Project.
 
@@ -90,8 +90,8 @@ Usage
 ===
 
 #### Requirements
-* Kryptokrona node daemon
-* kryptokrona-service
+* Gamersnestcoin node daemon
+* gamersnestcoin-service
 * [Node.js](http://nodejs.org/) LTS (6,8,10) ([follow these installation instructions](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions))
 * [Redis](http://redis.io/) key-value store v2.6+ ([follow these instructions](http://redis.io/topics/quickstart))
 * libssl required for the node-multi-hashing module
@@ -141,20 +141,19 @@ sudo apt-get install -y nodejs
 
 I have found using a screen session to keep everything running on the server works well.
 
-Grab the most recent Kryptokrona release here https://github.com/kryptokrona/kryptokrona/releases then launch your daemon and sync your chain.
-Or compile the source: https://github.com/kryptokrona/kryptokrona
+Grab the most recent Gamersnestcoin release here https://github.com/TechyGuy/Gamersnestcoin/releases then launch your daemon and sync your chain.
+Or compile the source: https://github.com/TechyGuy17/Gamersnestcoin
 
-Note: There is a bootstrap available here:  https://kryptokrona.se/blockchain.zip
 
-Once your daemon is synced with the network start your kryptokrona-service and redis-server.
+Once your daemon is synced with the network start your gamersnestcoin-service and redis-server.
 
 #### 1) Downloading & Installing
 
 Clone the repository and run `npm install` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/kryptokrona/kryptokrona-pool
-cd kryptokrona-pool
+git clone https://github.com/TechyGuy17/Gamersnestcoin-pool
+cd gamersnestcoin-pool
 npm install && npm test
 ```
 
@@ -170,16 +169,16 @@ npm audit fix
 Explanation for each field:
 ```javascript
 /* Used for storage in redis so multiple coins can share the same redis instance. */
-"coin": "kryptokrona",
+"coin": "Gamersnestcoin",
 
 /* Used for front-end display */
-"symbol": "XKR",
+"symbol": "GNC",
 
 /* Minimum units in a single coin, see COIN constant in DAEMON_CODE/src/cryptonote_config.h */
-"coinUnits": 100,
+"coinUnits": 100000,
 
 /* Coin network time to mine one block, see DIFFICULTY_TARGET constant in DAEMON_CODE/src/cryptonote_config.h */
-"coinDifficultyTarget": 90,
+"coinDifficultyTarget": 60,
 
 "logging": {
 
@@ -215,7 +214,7 @@ Explanation for each field:
     "clusterForks": "auto",
 
     /* Address where block rewards go, and miner payments come from. */
-    "poolAddress": "SEKReW5c7MjKD4rcTpA8ZAZ9sW2wzGWPV2WwX6XAgQ5uhCJ9GyrZgSQ42y6GDKU7oQ2pZUitWARBDD8doVod8NKDcbo3Vj94ge3"
+    "poolAddress": "<adress>"
 
     /* Poll RPC daemons for new blocks every this many milliseconds. */
     "blockRefreshInterval": 1000,
